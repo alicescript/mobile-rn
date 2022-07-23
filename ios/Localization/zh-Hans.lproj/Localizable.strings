@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Swishh
+
+  Created by Guilhem Fanton on 10/11/2021.
+
+*/
+
+"SwishhPushMessage" = "新消息";
+"SwishhPushMessageError" = "收到一条新消息，但解密时发生错误";

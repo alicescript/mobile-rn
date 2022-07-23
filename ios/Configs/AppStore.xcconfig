@@ -1,0 +1,13 @@
+//
+//  Release.xcconfig
+//  Swishh
+//
+//  Created by Godefroy Ponsinet on 19/11/2019.
+//  Copyright © 2019 Swishh Technologies. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include? "tmp.xcconfig"
+#include? "./Pods/Target Support Files/Pods-Swishh/Pods-Swishh.appstore release.xcconfig"
+#include? "../.env"

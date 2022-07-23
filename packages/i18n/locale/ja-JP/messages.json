@@ -1,0 +1,647 @@
+{
+	"onboarding": {
+		"getstarted": {
+			"screenTitle": "プライバシーを保護",
+			"title": "プライバシーを保護",
+			"desc": "無料で安全に P2P メッセージをやりとりする",
+			"create-button": "アカウントを作成",
+			"import-button": "アカウントをインポート"
+		},
+		"default-mode": {
+			"summary": {
+				"title": "デフォルトモード",
+				"screenTitle": "アカウントを作成",
+				"subtitle": "素早く始める",
+				"first-point": "最もプライバシー/快適性のバランスの取れたプリセットから始めましょう。Swishh ノードはパフォーマンスと非同期通信を改善するために使用されます。",
+				"second-point": "",
+				"third-point": "プライバシーと快適性のバランスを調整するには、「カスタムモード」を選択してください。",
+				"back-button": "戻る",
+				"accept-button": "始めましょう"
+			}
+		},
+		"custom-mode": {
+			"summary": {
+				"screenTitle": "アカウント作成 - 設定をカスタマイズ",
+				"title": "カスタムモード",
+				"subtitle": "プライバシーと快適性のバランスを調整",
+				"first-point": "このモードでは、すべての設定を個別に調整して、プライバシーと快適さのバランスを作成します。",
+				"second-point": "簡単に始めたい場合は、デフォルトモードを選択してください。",
+				"back-button": "戻る",
+				"accept-button": "続行"
+			},
+			"settings": {
+				"off-grid": {
+					"title": "Off-Grid 通信",
+					"ble-button": "Bluetooth Low Energy",
+					"nearby-button": "Android Nearby",
+					"mc-button": "Apple Multiper Connectivity",
+					"mdns-button": "Multicast DNS (LAN)"
+				},
+				"routing": {
+					"title": "ルーティング",
+					"dht-button": "分散ハッシュテーブル",
+					"rdvp-button": "ランデブーポイントノード"
+				},
+				"access": {
+					"title": "ネットワークアクセシビリティ",
+					"relay-button": "リレーノード (TURN)",
+					"bootstrap-button": "ブートストラップノード"
+				},
+				"modals": {
+					"add": {
+						"title": {
+							"relay": "リレーノード (TURN) を追加",
+							"bootstrap": "ブートストラップノードを追加",
+							"rdvp": "RDVPノードを追加"
+						}
+					},
+					"edit": {
+						"title": {
+							"relay": "リレーノード (TURN) を編集",
+							"bootstrap": "ブートストラップノードを編集",
+							"rdvp": "RDVPノードを編集"
+						}
+					},
+					"errors": {
+						"alias-already-exists": "エイリアスは既に存在します",
+						"multiaddr-alread-exists": "マルチアドレスは既に存在します",
+						"multiaddr-bad-format": "マルチアドレスの形式が不正です",
+						"multiaddr-p2p": "マルチアドレスはp2pを含む必要があります"
+					},
+					"buttons": {
+						"add": "追加",
+						"edit": "編集",
+						"delete": "削除"
+					},
+					"multiaddress": "マルチアドレス",
+					"alias": "エイリアス"
+				},
+				"all-button": "すべて",
+				"accept-button": "始めましょう"
+			}
+		},
+		"create-account": {
+			"title": "アカウントの作成",
+			"first-button": "",
+			"second-button": "",
+			"placeholder": "ニックネームを選択",
+			"good-to-know": {
+				"title": "伝えておきたいこと:",
+				"first-point": "ローカルにアカウントが作成されました。",
+				"second-point": "ニックネームはオプションで、後から編集も可能です。"
+			}
+		},
+		"generate-key": {
+			"title": "Swishhノードを開始しています",
+			"desc": "これは数秒かかることがあります"
+		},
+		"setup-finished": {
+			"title": "セットアップが完了しました!",
+			"desc": "アプリが使えるようになりました。連絡先に相手を追加すると、自由かつプライベートに話せます。",
+			"button": "Swishh の使用を開始"
+		},
+		"web-views": {
+			"title": "Web コンテンツのアクセス許可",
+			"desc": "Swishhはウェブからコンテンツを読み込もうとしています。このページを開きますか?",
+			"first-button": "キャンセル",
+			"second-button": "はい"
+		}
+	},
+	"main": {
+		"home": {
+			"title": "Swishh",
+			"requests": {
+				"title": "リクエスト",
+				"accept": "承認",
+				"card-title": "連絡先リクエスト!"
+			},
+			"input-placeholder": "キーワードを検索",
+			"no-contacts": "連絡先やチャットはまだありません",
+			"search": {
+				"no-results": "結果はありません"
+			},
+			"multi-account": {
+				"create-button": "新しいアカウントを作成",
+				"import-button": "アカウントをインポート"
+			},
+			"create-group": {
+				"title": "新しいグループ",
+				"add-members": "メンバーを追加",
+				"group-info": "グループの情報",
+				"search-placeholder": "検索",
+				"continue": "続ける",
+				"create-group": "新しいグループを作成"
+			},
+			"create-group-finalize": {
+				"placeholder": "グループ名",
+				"about": "グループについて",
+				"first-bullet-point": "グループ内の誰でも名前を変更したり、新しいメンバーを招待できます",
+				"second-bullet-point": "リンクでメンバーを招待できます",
+				"third-bullet-point": "このグループから離れることができます",
+				"fourth-bullet-point": "このグループを削除する権限がありません",
+				"fifth-bullet-point": "このグループからメンバーを削除する権限がありません"
+			},
+			"conversations": {
+				"request-sent": "リクエストを送信しました。承認待ちです...",
+				"draft": "下書き: {{message}}"
+			}
+		},
+		"suggestion-display-name-initial": "追加するにはここをクリック"
+	},
+	"settings": {
+		"home": {
+			"title": "設定",
+			"proximity-button": "Off-Grid 通信",
+			"notifications-button": "通知",
+			"contact-convs-button": "連絡先と会話",
+			"appearance-button": "外観",
+			"accounts-button": "アカウント",
+			"network-button": "ネットワーク",
+			"bug-button": "バグを送信",
+			"about-button": "Swishhについて",
+			"version-button": "",
+			"devtools-button": "開発者向けツール"
+		},
+		"about": {
+			"title": "Swishhについて",
+			"faq-button": "よくある質問",
+			"roadmap-button": "ロードマップ",
+			"policy-button": "プライバシーポリシー",
+			"license-button": "オープンソースライセンス",
+			"terms-of-use": "利用規約"
+		},
+		"accounts": {
+			"title": "アカウント",
+			"backup-button": "バックアップ",
+			"backup-notif-title": "成功",
+			"backup-notif-desc": "アカウントがバックアップされました！",
+			"accounts-button": "アカウント",
+			"create-button": "アカウントを作成",
+			"import-button": "アカウントをインポート",
+			"link-button": "別のデバイスをリンク",
+			"delete-button": "このアカウントを削除",
+			"delete-title": "アカウントの削除"
+		},
+		"appearance": {
+			"title": "外観",
+			"dark-button": "ダークモード",
+			"editor-button": "テーマ・エディター",
+			"theme-editor": {
+				"title": "テーマ・エディター"
+			}
+		},
+		"contact-convs": {
+			"title": "連絡先と会話",
+			"reset-button": "連絡先のリンク/QRコードをリセットする",
+			"request-button": "連絡先リクエストの受信を許可する"
+		},
+		"network": {
+			"title": "ネットワーク",
+			"ble-button": "Bluetooth Low Energy",
+			"mc-button": "マルチピア接続",
+			"nearby-button": "Android Nearby",
+			"mdns-button": "マルチキャストDNS",
+			"memo-cell-button": "",
+			"medias-cell-button": "",
+			"dht-button": "分散ハッシュテーブル",
+			"rdvp-button": "ランデブーポイントノード",
+			"relay-button": "リレーノード",
+			"bootstrap-button": "ブートストラップノード"
+		},
+		"notifications": {
+			"title": "通知"
+		},
+		"edit-profile": {
+			"title": "プロフィールを編集",
+			"qr-will-update": "あなたの Swishh ID (QR コード) を更新します",
+			"ocr-wont-update": "保留中の連絡先リクエストは更新されません",
+			"save": "変更を保存",
+			"cancel": "キャンセル",
+			"name-input-placeholder": "名前..."
+		},
+		"swishh-services": {
+			"title": "Swishh サービス一覧",
+			"desc": " Swishh サービスを有効にすると、プッシュ通知を Swishh Technologies のサーバー経由で受信し、複製された通知にアクセスすることができます。",
+			"button": "Swishh サービスを有効にする",
+			"skip": "スキップして後で行う"
+		},
+		"delete-account": {
+			"title": "アカウントを削除します!",
+			"first-desc": "本当にアカウントを削除しますか？",
+			"desc": "承認するには delete と入力してください",
+			"cancel-button": "キャンセル",
+			"delete-button": "削除"
+		},
+		"faq": {
+			"title": "よくある質問"
+		},
+		"roadmap": {
+			"title": "ロードマップ"
+		},
+		"privacy-policy": {
+			"title": "プライバシーポリシー"
+		},
+		"devtools": {
+			"title": "開発用ツール",
+			"header-left-button": "端末情報",
+			"header-middle-button": "偽装データを生成する",
+			"header-right-button": "サービス／デーモンを再起動する",
+			"simulate-button": "ストリームのエラーをシミュレーションする",
+			"simulate-js-error-button": "JavaScript のエラーをシミュレーションする",
+			"system-info-button": "システム情報",
+			"debug-button": "デバッグ",
+			"log-button": {
+				"name": "ログの形式",
+				"bullet-point": "このフィールドを変更した後、アプリを再起動します"
+			},
+			"log-filters-button": {
+				"name": "ログのフィルター一覧",
+				"bullet-point": "このフィールドを変更した後、アプリを再起動します"
+			},
+			"add-dev-conversations-button": "開発者の会話を追加する",
+			"share-button": {
+				"title": "Discord で ID を共有する",
+				"alert-title": "QR コードを Swishh の Discord サーバーの「#dev-logs」で共有しますか？",
+				"alert-message": "これにより、他のメンバーが QR コードをスキャンしたり、連絡先リンクをコピーしたりできます。",
+				"alert-accept-button": "いいよん 👍",
+				"alert-cancel-button": "いいえ"
+			},
+			"native-bridge-button": "Native Bridge をテスト",
+			"dump-account-button": "アカウントを書き出す",
+			"dump-contacts-button": "連絡先を書き出す",
+			"dump-conversations-button": "会話を書き出す",
+			"dump-interactions-button": "インタラクションを書き出す",
+			"dump-members-button": "メンバーを書き出す",
+			"stop-node-button": "ノードを停止する",
+			"local-grpc-button": "ローカル gRPC",
+			"console-logs-button": "コンソールログ",
+			"ipfs-webui-button": "IPFS WebUI",
+			"send-to-all-button": {
+				"title": "連絡先の全員にメッセージを送信する",
+				"sending": "送信しています...",
+				"test": "テスト送信 ",
+				"tried": "✔ {{length}} 件の連絡先に送信しようとしました"
+			},
+			"tyber-attach": "Tyber を {{host}} に割り当てる",
+			"tyber-host-button": {
+				"name": "Tyber",
+				"bullet-point": "このフィールドを変更した後、アプリを再起動します"
+			},
+			"footer-left-button": "端末情報",
+			"footer-middle-button": "イベントの一覧",
+			"footer-right-button": "サービス／デーモンを再起動する"
+		},
+		"system-info": {
+			"title": "システム情報"
+		},
+		"fake-data": {
+			"title": "偽装データを生成する",
+			"contacts-button": "偽装連絡先を生成する",
+			"multi-members-button": "偽装メンバーを生成する",
+			"messages-button": "偽装メッセージを生成する",
+			"delete-button": "偽装データを削除する"
+		},
+		"add-dev-conversations": {
+			"title": "開発者の会話を追加する",
+			"add": "{{name}} を追加",
+			"tag-bot": "Bot",
+			"tag-contact": "連絡先",
+			"tag-conversation": "会話"
+		},
+		"ipfs-webui": {
+			"title": "IPFS WebUI"
+		},
+		"theme-editor": {
+			"randomize": "テーマを生成する",
+			"save": "このテーマを保存する",
+			"export": "選択されたテーマをファイルとしてエクスポート",
+			"share": "選択されたテーマをファイルとして共有",
+			"import": "テーマのファイルをインポート",
+			"delete": "デフォルト以外のテーマをすべて削除する",
+			"bad-format-title": "テーマのフォーマットが不正です",
+			"bad-format-desc": "テーマファイルの形式が正しくありません",
+			"notification-file-saved": {
+				"title": "データを保存しました！",
+				"desc": "ダウンロード・ディレクトリで利用可能"
+			}
+		},
+		"my-swishh-ID": {
+			"title": "私のSwishh ID"
+		},
+		"share": {
+			"invite": "招待",
+			"tap-to-scan": "タップしてスキャン",
+			"create-group": "新しいグループを作成"
+		}
+	},
+	"tabs": {
+		"qr": "QR コード",
+		"fingerprint": "識別情報（フィンガープリント）",
+		"info": "各種情報",
+		"devices": "デバイス"
+	},
+	"modals": {
+		"manage-deep-link": {
+			"invalid-link": "無効なリンクです！",
+			"invalid-qr": "無効な QR コードです！",
+			"error": "エラー！",
+			"contact-already-added": "連絡先はすでに追加されています",
+			"contact-already-added-message": "同じ連絡先を複数追加することはできません"
+		},
+		"invalid-scan": {
+			"dismiss-button": "閉じる"
+		},
+		"group-invitation": {
+			"join": "このグループに参加",
+			"password-label": "グループのパスワードを入力してください",
+			"password-placeholder": "パスワード..."
+		},
+		"save-theme": {
+			"title": "テーマを保存中...",
+			"desc": "テーマの名前を選択してください！",
+			"placeholder": "テーマ名...",
+			"cancel": "キャンセル",
+			"add": "追加！"
+		}
+	},
+	"chat": {
+		"title-unknown": "不明な会話",
+		"sending": "送信しています...",
+		"sent": "送信しました",
+		"contact-settings": {
+			"my-devices": "私のデバイス"
+		},
+		"multi-member": {
+			"input-placeholder": "ここに入力..."
+		},
+		"push-notifications": {
+			"title": "通知",
+			"unsupported": "通知はサポートされていません",
+			"check-device-settings": "この会話はプッシュ通知を受信するように設定されていますが、お使いのデバイスのシステム設定でアラートが無効になっています",
+			"check-account-settings": "通知は無効です。アカウント設定を確認してください",
+			"warning-disable": {
+				"title": "この機能を有効にしますか？",
+				"subtitle": "一度有効にすると、特定の会話でプッシュ通知を無効にすることはできません。",
+				"accept": "有効化",
+				"refuse": "スキップ"
+			},
+			"why-cant-disable": "プッシュ通知は特定の会話でミュートできません",
+			"why-cant-disable-account": "プッシュ通知はミュートできませんが、OS の設定を使用して、Swishh 通知をグローバルにミュートできます。",
+			"errors": {
+				"no-token": "お使いのデバイスはプッシュ通知に対応していません",
+				"no-server": "最初にプッシュリレーを登録してください"
+			},
+			"warning-enable-all": {
+				"title": "すべての会話でプッシュ通知を有効にしますか？",
+				"subtitle": "今後参加する会話の通知も有効になります",
+				"refuse": "拒否する",
+				"accept": "承認"
+			},
+			"warning-disable-mute": {
+				"title": "この会話で通知を有効にしますか？",
+				"refuse": "ミュートのままにする",
+				"accept": "ミュート解除"
+			},
+			"receive-push": "プッシュ通知の受信",
+			"hide-previews": "プッシュ通知のプレビューを非表示にする",
+			"auto-enable": "現在および今後の会話のプッシュを有効にする",
+			"show-in-app": "アプリ内の通知を表示する"
+		},
+		"devices": {
+			"title": "デバイス",
+			"push": {
+				"enabled": "プッシュ通知を有効にしました",
+				"not-enabled": "プッシュ通知は無効になっています"
+			}
+		},
+		"multi-member-settings": {
+			"title": "会話の設定",
+			"media-button": "メディア、リンク & ドキュメント",
+			"members-button": {
+				"title": "メンバー"
+			},
+			"add-member-button": "メンバーを追加",
+			"invite-button": "リンクから招待",
+			"save-button": "会話をサーバーに保存"
+		},
+		"add-members": {
+			"members": "メンバー",
+			"contacts": "連絡先",
+			"add": "追加！"
+		},
+		"multi-member-qr": {
+			"title": "グループの QR コード"
+		},
+		"one-to-one": {
+			"contact-request-box": {
+				"title": "連絡先リクエスト",
+				"group-invitation": "グループの招待",
+				"refuse-button": "拒否する",
+				"accept-button": "承認",
+				"accepted-button": "承認する",
+				"error": "グループにあなたを追加する際にエラーが発生しました。☹️",
+				"you-invited": "招待されました",
+				"this-contact": "この連絡先",
+				"to-a-group": "グループに! 💌"
+			},
+			"infos-chat": {
+				"connection-confirmed": "👋 Swishh 接続が確認されました! 🎉",
+				"request-sent": "リクエスト送信済み ✈",
+				"incoming": "このリクエストを承認して返信！",
+				"outgoing": "連絡先からの承認待ちによる接続待機中...",
+				"refresh-button": ""
+			},
+			"incoming-input-placeholder": "ここに書くためのリクエストを承認してください...",
+			"input-placeholder": "ここに入力..."
+		},
+		"one-to-one-settings": {
+			"title": "会話の設定",
+			"media-button": "メディア、リンク & ドキュメント",
+			"save-button": "会話をサーバーに保存"
+		},
+		"replicate-group-settings": {
+			"title": "会話をサーバーに登録する",
+			"no-registered-button": "会話の複製サービスが登録されていません",
+			"connect-button": "Swishh が運営するサービスに接続する",
+			"manage-add-button": "サービスを管理または追加する"
+		},
+		"files": {
+			"gallery": "ギャラリー",
+			"no-images": "画像なし",
+			"camera": "カメラ",
+			"files": "ファイル",
+			"microphone": "マイク",
+			"security-access": "セキュリティ設定",
+			"security-access-desc": "ここをタップしてセキュリティ設定を開きアクセスを許可：",
+			"save-to-gallery": "このファイルをギャラリーに保存する",
+			"share": "共有",
+			"forward-swishh": "Swishh の連絡先に転送する",
+			"forward": "転送",
+			"image-saved": "画像をギャラリーに保存しました"
+		},
+		"shared-medias": {
+			"title": "共有メディア",
+			"medias": "メディア",
+			"links": "リンク",
+			"documents": "ドキュメント",
+			"file": "ファイル",
+			"picture": "画像",
+			"audio": "音声"
+		},
+		"reply": {
+			"response-to": "返信先",
+			"replying-to": "以下に返信：",
+			"replied-to": "返信済み："
+		},
+		"user-message": {
+			"read-more": "もっと読む",
+			"show-less": "表示を隠す"
+		},
+		"emojis": {
+			"matching": ""
+		}
+	},
+	"account": {
+		"deleting": "",
+		"creating": "",
+		"opening": {
+			"alert-push-title": "プッシュ通知",
+			"alert-push-go-failed": "",
+			"alert-push-fetch-failed": "",
+			"alert-push-perm-denied": "",
+			"alert-push-desc": "",
+			"alert-push-button": "続ける"
+		}
+	},
+	"audio": {
+		"record": {
+			"tooltip": {
+				"usage": "長押しで録音、離すと送信されます",
+				"not-sent": "音声メッセージは送信されていません",
+				"permission-denied": "アプリは音声の録音が許可されていません"
+			},
+			"slide-to-cancel": "スライドして中止",
+			"cancel-button": "キャンセル"
+		}
+	},
+	"permission": {
+		"notification": {
+			"title": "プッシュ通知",
+			"desc": "Swishh アプリはローカル通知またはプッシュ通知の許可が必要です。これにより、メッセージを受信した際に通知することができます。"
+		},
+		"proximity": {
+			"title": "Bluetooth 経由のメッセージ",
+			"android-desc": "オフラインで Bluetooth 経由のメッセージを送信・受信するには、アプリがバックグラウンドにある場合でも、Android API の「位置情報の許可」が必要です。しかし、いかなる場合でも位置情報データは使用することはありません。",
+			"ios-desc": "オフラインで Bluetooth 経由のメッセージを送信・受信するには、iOS API の許可が必要です。"
+		},
+		"camera": {
+			"title": "カメラ",
+			"desc": "カメラへのアクセスを許可しますか？"
+		},
+		"audio": {
+			"title": "音声メッセージ",
+			"desc": "連絡先に音声メッセージを送信するには、Swishh アプリに「マイクの権限」を許可する必要があります。"
+		},
+		"gallery": {
+			"title": "画像メッセージ",
+			"desc": "連絡先に画像を送信するには、Swishhにデバイスに保存されている写真やその他のメディアにアクセスすることを許可する必要があります。"
+		},
+		"button-labels": {
+			"allow": "許可する",
+			"settings": "設定に移動"
+		},
+		"skip": "スキップ",
+		"cancel": "キャンセル",
+		"settings-text": "設定画面から {{title}} の権限を有効にできます。"
+	},
+	"notification": {
+		"need-restart": {
+			"title": "再起動が必要です",
+			"desc": "Swishhを再起動してデータを保存し、通知を有効にしてください！"
+		},
+		"submit-failed": {
+			"title": "",
+			"desc": ""
+		}
+	},
+	"error": {
+		"labels": {
+			"bug": "バグが検出されました",
+			"crash": "クラッシュを検出しました"
+		},
+		"restart-app": "アプリを再起動",
+		"wtf-screen": {
+			"title": "失敗の原因は?",
+			"desc": "アプリケーションがクラッシュしました。",
+			"desc-report": "アプリを終了して再起動するにはボタンをクリックします。"
+		},
+		"sorry-screen": {
+			"title": "バグを謝罪します!",
+			"desc": "恐らく、それは Swishh のインターン開発者フランシスのせいに間違いありません。フランシス、何て野郎だ！",
+			"desc-em": "ってか、Swishh のチームにフランシスはいないんですが",
+			"desc-report": "アプリを終了して再起動するにはボタンをクリックします。"
+		}
+	},
+	"debug": {
+		"inspector": {
+			"show-button": "アプリケーション診断を表示",
+			"hide-button": "閉じる",
+			"title": "診断",
+			"accounts": {
+				"title": "アカウント",
+				"data-not-found": "アカウントが一覧にありません",
+				"action-delete": {
+					"file-exists": "アカウント {{accountId}} は存在しませんが、ファイルにはこの名前が付いています。",
+					"account-exists": "アカウント {{accountId}} は現在存在しています。",
+					"fs-read-error": "アカウントに関する FS 情報を取得中にエラーが発生しました",
+					"actions-title": "何をすべきですか?",
+					"action-account-manager": "アカウント管理で削除する",
+					"action-account-manager-confirm": "アカウントの削除を確認する",
+					"action-force-delete": "強制的に削除する",
+					"action-force-delete-confirm": "アカウントの強制削除を許可する",
+					"error-close": "アカウントの終了処理中にエラーが発生しました",
+					"error-delete": "アカウントの削除中にエラーが発生しました",
+					"success-feedback": "アカウントが削除されました",
+					"action-cancel": "キャンセル"
+				},
+				"status": {
+					"datastore-found": "既存のデータが見つかりました",
+					"datastore-not-found": "既存のデータはありません",
+					"ipfs-repo-found": "IPFS のリポジトリが見つかりました",
+					"ipfs-repo-not-found": "IPFS リポジトリはありません",
+					"messenger-db-found": "Messenger の DB が見つかりました",
+					"messenger-db-not-found": "Messenger の DB はありません"
+				},
+				"infos": {
+					"aligned": {
+						"name": "名前: {{name}}",
+						"created": "作成日: {{created}}",
+						"opened": "開封日:  {{opened}}",
+						"error": "エラー: {{error}}"
+					}
+				}
+			},
+			"errors": {
+				"title": "エラー：",
+				"header-reported": "報告済みエラー:",
+				"header-all-clear": "報告されたエラーはありません",
+				"listing-files-failed": "ディレクトリの内容一覧を表示中にエラーが発生しました",
+				"listing-accounts-failed": "アカウント一覧を表示中にエラーが発生しました",
+				"listing-accounts-failed-grpc": "アカウント表示中に gRPC のエラーが発生しました"
+			},
+			"dump": {
+				"button": "アプリの状態情報を書き出す"
+			},
+			"refresh": "更新",
+			"confirm-alert": {
+				"button-confirm": "確認",
+				"button-cancel": "キャンセル"
+			}
+		}
+	},
+	"time-for": {
+		"minutes": "{{minutes}} 分",
+		"hours": "{{hours}} 時間",
+		"days": "{{days}} 日"
+	}
+}

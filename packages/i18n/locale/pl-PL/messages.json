@@ -1,0 +1,647 @@
+{
+	"onboarding": {
+		"getstarted": {
+			"screenTitle": "",
+			"title": "",
+			"desc": "",
+			"create-button": "",
+			"import-button": ""
+		},
+		"default-mode": {
+			"summary": {
+				"title": "",
+				"screenTitle": "",
+				"subtitle": "",
+				"first-point": "",
+				"second-point": "",
+				"third-point": "",
+				"back-button": "",
+				"accept-button": ""
+			}
+		},
+		"custom-mode": {
+			"summary": {
+				"screenTitle": "",
+				"title": "",
+				"subtitle": "",
+				"first-point": "",
+				"second-point": "",
+				"back-button": "",
+				"accept-button": ""
+			},
+			"settings": {
+				"off-grid": {
+					"title": "",
+					"ble-button": "",
+					"nearby-button": "",
+					"mc-button": "",
+					"mdns-button": ""
+				},
+				"routing": {
+					"title": "",
+					"dht-button": "",
+					"rdvp-button": ""
+				},
+				"access": {
+					"title": "",
+					"relay-button": "",
+					"bootstrap-button": ""
+				},
+				"modals": {
+					"add": {
+						"title": {
+							"relay": "",
+							"bootstrap": "",
+							"rdvp": ""
+						}
+					},
+					"edit": {
+						"title": {
+							"relay": "",
+							"bootstrap": "",
+							"rdvp": ""
+						}
+					},
+					"errors": {
+						"alias-already-exists": "",
+						"multiaddr-alread-exists": "",
+						"multiaddr-bad-format": "",
+						"multiaddr-p2p": ""
+					},
+					"buttons": {
+						"add": "Dodaj",
+						"edit": "",
+						"delete": ""
+					},
+					"multiaddress": "",
+					"alias": ""
+				},
+				"all-button": "",
+				"accept-button": ""
+			}
+		},
+		"create-account": {
+			"title": "Utwórz swoje konto",
+			"first-button": "",
+			"second-button": "",
+			"placeholder": "",
+			"good-to-know": {
+				"title": "",
+				"first-point": "",
+				"second-point": ""
+			}
+		},
+		"generate-key": {
+			"title": "Uruchamianie węzła Swishh…",
+			"desc": "To może potrwać kilka sekund"
+		},
+		"setup-finished": {
+			"title": "Konfiguracja zakończona!",
+			"desc": "Teraz możesz korzystać z aplikacji, dodawać kontakty i rozmawiać z nimi swobodnie i prywatnie",
+			"button": ""
+		},
+		"web-views": {
+			"title": "",
+			"desc": "",
+			"first-button": "Anuluj",
+			"second-button": ""
+		}
+	},
+	"main": {
+		"home": {
+			"title": "",
+			"requests": {
+				"title": "Prośby",
+				"accept": "Akceptuj",
+				"card-title": "Prośba o kontakt!"
+			},
+			"input-placeholder": "Szukaj słowa",
+			"no-contacts": "Nie masz jeszcze żadnych kontaktów ani czatu",
+			"search": {
+				"no-results": "Nie znaleziono wyników"
+			},
+			"multi-account": {
+				"create-button": "Utwórz nowe konto",
+				"import-button": "Importuj konto"
+			},
+			"create-group": {
+				"title": "Nowa Grupa",
+				"add-members": "Dodaj członków",
+				"group-info": "Informacje o grupie",
+				"search-placeholder": "Szukaj",
+				"continue": "",
+				"create-group": ""
+			},
+			"create-group-finalize": {
+				"placeholder": "",
+				"about": "",
+				"first-bullet-point": "",
+				"second-bullet-point": "",
+				"third-bullet-point": "",
+				"fourth-bullet-point": "",
+				"fifth-bullet-point": ""
+			},
+			"conversations": {
+				"request-sent": "",
+				"draft": ""
+			}
+		},
+		"suggestion-display-name-initial": "Kliknij tutaj, aby dodać"
+	},
+	"settings": {
+		"home": {
+			"title": "Ustawienia",
+			"proximity-button": "",
+			"notifications-button": "Powiadomienia",
+			"contact-convs-button": "",
+			"appearance-button": "",
+			"accounts-button": "Konta",
+			"network-button": "",
+			"bug-button": "",
+			"about-button": "O Swishh",
+			"version-button": "",
+			"devtools-button": "Narzędzia Deweloperskie"
+		},
+		"about": {
+			"title": "O Swishh",
+			"faq-button": "",
+			"roadmap-button": "",
+			"policy-button": "",
+			"license-button": "",
+			"terms-of-use": "Warunki użytkowania"
+		},
+		"accounts": {
+			"title": "Konta",
+			"backup-button": "",
+			"backup-notif-title": "",
+			"backup-notif-desc": "",
+			"accounts-button": "Konta",
+			"create-button": "",
+			"import-button": "",
+			"link-button": "",
+			"delete-button": "",
+			"delete-title": ""
+		},
+		"appearance": {
+			"title": "",
+			"dark-button": "",
+			"editor-button": "",
+			"theme-editor": {
+				"title": ""
+			}
+		},
+		"contact-convs": {
+			"title": "",
+			"reset-button": "",
+			"request-button": ""
+		},
+		"network": {
+			"title": "",
+			"ble-button": "",
+			"mc-button": "",
+			"nearby-button": "",
+			"mdns-button": "Multiemisja DNS",
+			"memo-cell-button": "",
+			"medias-cell-button": "",
+			"dht-button": "",
+			"rdvp-button": "",
+			"relay-button": "",
+			"bootstrap-button": ""
+		},
+		"notifications": {
+			"title": "Powiadomienia"
+		},
+		"edit-profile": {
+			"title": "Edytuj mój profil",
+			"qr-will-update": "Twój identyfikator Swishh (kod QR) zostanie zaktualizowany",
+			"ocr-wont-update": "Twoje oczekujące prośby o kontakt nie zostaną zaktualizowane",
+			"save": "Zapisz zmiany",
+			"cancel": "Anuluj",
+			"name-input-placeholder": "Nazwa..."
+		},
+		"swishh-services": {
+			"title": "",
+			"desc": "",
+			"button": "",
+			"skip": ""
+		},
+		"delete-account": {
+			"title": "Usuń konto!",
+			"first-desc": "Czy na pewno chcesz usunąć swoje konto?",
+			"desc": "Proszę wpisać usuń, aby potwierdzić",
+			"cancel-button": "Anuluj",
+			"delete-button": ""
+		},
+		"faq": {
+			"title": ""
+		},
+		"roadmap": {
+			"title": ""
+		},
+		"privacy-policy": {
+			"title": ""
+		},
+		"devtools": {
+			"title": "Narzędzia deweloperskie",
+			"header-left-button": "Informacje o urządzeniu",
+			"header-middle-button": "Generuj fałszywe dane",
+			"header-right-button": "Zrestartuj daemon",
+			"simulate-button": "Symuluj błąd strumienia",
+			"simulate-js-error-button": "Symuluj błąd JavaScript",
+			"system-info-button": "Informacje systemowe",
+			"debug-button": "Debuguj",
+			"log-button": {
+				"name": "Format dziennika",
+				"bullet-point": "Uruchom ponownie aplikację po zmianie tego pola"
+			},
+			"log-filters-button": {
+				"name": "Filtry dzienników",
+				"bullet-point": "Uruchom ponownie aplikację po zmianie tego pola"
+			},
+			"add-dev-conversations-button": "Dodaj rozmowy deweloperskie",
+			"share-button": {
+				"title": "Udostępnij ID na discordzie",
+				"alert-title": "",
+				"alert-message": "Umożliwi to innemu personelowi skanowanie kodu QR lub skopiowanie linku do kontaktu.",
+				"alert-accept-button": "Tak👍",
+				"alert-cancel-button": "Nie"
+			},
+			"native-bridge-button": "Test natywnego mostu",
+			"dump-account-button": "Zrzuć konto",
+			"dump-contacts-button": "Zrzuć kontakty",
+			"dump-conversations-button": "Zrzuć rozmowy",
+			"dump-interactions-button": "Zrzuć interakcje",
+			"dump-members-button": "Zrzuć członków",
+			"stop-node-button": "Zatrzymaj węzeł",
+			"local-grpc-button": "lokalny gRPC",
+			"console-logs-button": "Logi konsoli",
+			"ipfs-webui-button": "IPFS WebUI",
+			"send-to-all-button": {
+				"title": "Wyślij wiadomości do wszystkich kontaktów",
+				"sending": "Wysyłanie...",
+				"test": "Test, ",
+				"tried": "✔ Próbowano wysłać do {{length}} kontaktów"
+			},
+			"tyber-attach": "",
+			"tyber-host-button": {
+				"name": "",
+				"bullet-point": "Uruchom ponownie aplikację po zmianie tego pola"
+			},
+			"footer-left-button": "Informacje o urządzeniu",
+			"footer-middle-button": "Lista wydarzeń",
+			"footer-right-button": "Zrestartuj daemon"
+		},
+		"system-info": {
+			"title": "Informacje systemowe"
+		},
+		"fake-data": {
+			"title": "Generuj fałszywe dane",
+			"contacts-button": "Generuj fałszywe kontakty",
+			"multi-members-button": "Generuj wiele fałszywych członków",
+			"messages-button": "Generuj fałszywe wiadomości",
+			"delete-button": "Usuń fałszywe dane"
+		},
+		"add-dev-conversations": {
+			"title": "Dodaj rozmowy deweloperskie",
+			"add": "Dodaj {{name}}",
+			"tag-bot": "Bot",
+			"tag-contact": "Kontakt",
+			"tag-conversation": ""
+		},
+		"ipfs-webui": {
+			"title": "IPFS WebUI"
+		},
+		"theme-editor": {
+			"randomize": "",
+			"save": "",
+			"export": "",
+			"share": "",
+			"import": "",
+			"delete": "",
+			"bad-format-title": "",
+			"bad-format-desc": "",
+			"notification-file-saved": {
+				"title": "",
+				"desc": ""
+			}
+		},
+		"my-swishh-ID": {
+			"title": ""
+		},
+		"share": {
+			"invite": "",
+			"tap-to-scan": "",
+			"create-group": ""
+		}
+	},
+	"tabs": {
+		"qr": "QR",
+		"fingerprint": "Odcisk palca",
+		"info": "Informacje",
+		"devices": "Urządzenia"
+	},
+	"modals": {
+		"manage-deep-link": {
+			"invalid-link": "Nieprawidłowy link!",
+			"invalid-qr": "Nieprawidłowy kod QR!",
+			"error": "Błąd!",
+			"contact-already-added": "Kontakt jest już dodany",
+			"contact-already-added-message": "Nie możesz dodać tego samego kontaktu wiele razy"
+		},
+		"invalid-scan": {
+			"dismiss-button": ""
+		},
+		"group-invitation": {
+			"join": "",
+			"password-label": "",
+			"password-placeholder": ""
+		},
+		"save-theme": {
+			"title": "",
+			"desc": "",
+			"placeholder": "",
+			"cancel": "Anuluj",
+			"add": ""
+		}
+	},
+	"chat": {
+		"title-unknown": "",
+		"sending": "Wysyłanie...",
+		"sent": "",
+		"contact-settings": {
+			"my-devices": ""
+		},
+		"multi-member": {
+			"input-placeholder": "Wpisz tutaj..."
+		},
+		"push-notifications": {
+			"title": "Powiadomienia",
+			"unsupported": "",
+			"check-device-settings": "",
+			"check-account-settings": "",
+			"warning-disable": {
+				"title": "",
+				"subtitle": "",
+				"accept": "",
+				"refuse": ""
+			},
+			"why-cant-disable": "",
+			"why-cant-disable-account": "",
+			"errors": {
+				"no-token": "",
+				"no-server": ""
+			},
+			"warning-enable-all": {
+				"title": "",
+				"subtitle": "",
+				"refuse": "",
+				"accept": "Akceptuj"
+			},
+			"warning-disable-mute": {
+				"title": "",
+				"refuse": "",
+				"accept": ""
+			},
+			"receive-push": "Otrzymuj powiadomienia push",
+			"hide-previews": "",
+			"auto-enable": "",
+			"show-in-app": ""
+		},
+		"devices": {
+			"title": "Urządzenia",
+			"push": {
+				"enabled": "",
+				"not-enabled": "Powiadomienia push wyłączone"
+			}
+		},
+		"multi-member-settings": {
+			"title": "",
+			"media-button": "Multimedia, linki i dokumenty",
+			"members-button": {
+				"title": "Członkowie"
+			},
+			"add-member-button": "Dodaj członka",
+			"invite-button": "Zaproś przez link",
+			"save-button": "Zapisz konwersację na serwerze"
+		},
+		"add-members": {
+			"members": "Członkowie",
+			"contacts": "",
+			"add": ""
+		},
+		"multi-member-qr": {
+			"title": "QR Grupy"
+		},
+		"one-to-one": {
+			"contact-request-box": {
+				"title": "Prośba o kontakt",
+				"group-invitation": "",
+				"refuse-button": "",
+				"accept-button": "Akceptuj",
+				"accepted-button": "",
+				"error": "",
+				"you-invited": "",
+				"this-contact": "",
+				"to-a-group": ""
+			},
+			"infos-chat": {
+				"connection-confirmed": "👋 Połączenie Swishh potwierdzone! 🎉",
+				"request-sent": "Prośba wysłana ✈",
+				"incoming": "Zaakceptuj tę prośbę aby odpowiedzieć!",
+				"outgoing": "Oczekiwanie na odpowiedź na Twojego kontaktu aby się połączyć!",
+				"refresh-button": ""
+			},
+			"incoming-input-placeholder": "Zaakceptuj prośbę aby pisać tutaj...",
+			"input-placeholder": "Wpisz tutaj..."
+		},
+		"one-to-one-settings": {
+			"title": "",
+			"media-button": "Multimedia, linki i dokumenty",
+			"save-button": "Zapisz konwersację na serwerze"
+		},
+		"replicate-group-settings": {
+			"title": "Zarejestruj konwersację na serwerze",
+			"no-registered-button": "Brak zarejestrowanej usługi replikacji",
+			"connect-button": "Połącz z usługami świadczonymi przez Swishh",
+			"manage-add-button": "Zarządzaj lub dodaj usługi"
+		},
+		"files": {
+			"gallery": "Galeria",
+			"no-images": "",
+			"camera": "Aparat",
+			"files": "Pliki",
+			"microphone": "Mikrofon",
+			"security-access": "Dostęp do zabezpieczeń",
+			"security-access-desc": "Dotknij tutaj, żeby otworzyć ustawienie, aby zezwolić na dostęp do Twojego",
+			"save-to-gallery": "Zapisz ten plik w galerii",
+			"share": "Udostępnij",
+			"forward-swishh": "Przekaż do kontaktu Swishh",
+			"forward": "Przekaż",
+			"image-saved": "Obraz zapisany w galerii"
+		},
+		"shared-medias": {
+			"title": "Współdzielone media",
+			"medias": "Media",
+			"links": "Linki",
+			"documents": "Dokumenty",
+			"file": "",
+			"picture": "",
+			"audio": ""
+		},
+		"reply": {
+			"response-to": "",
+			"replying-to": "",
+			"replied-to": ""
+		},
+		"user-message": {
+			"read-more": "",
+			"show-less": ""
+		},
+		"emojis": {
+			"matching": ""
+		}
+	},
+	"account": {
+		"deleting": "",
+		"creating": "",
+		"opening": {
+			"alert-push-title": "",
+			"alert-push-go-failed": "",
+			"alert-push-fetch-failed": "",
+			"alert-push-perm-denied": "",
+			"alert-push-desc": "",
+			"alert-push-button": ""
+		}
+	},
+	"audio": {
+		"record": {
+			"tooltip": {
+				"usage": "Przytrzymaj aby nagrywać, puść, aby wysłać",
+				"not-sent": "Wiadomość audio nie została wysłana",
+				"permission-denied": "Aplikacja nie może nagrywać dźwięku"
+			},
+			"slide-to-cancel": "<< Przesuń aby anulować",
+			"cancel-button": "Anuluj"
+		}
+	},
+	"permission": {
+		"notification": {
+			"title": "",
+			"desc": ""
+		},
+		"proximity": {
+			"title": "",
+			"android-desc": "",
+			"ios-desc": ""
+		},
+		"camera": {
+			"title": "Aparat",
+			"desc": ""
+		},
+		"audio": {
+			"title": "",
+			"desc": ""
+		},
+		"gallery": {
+			"title": "",
+			"desc": ""
+		},
+		"button-labels": {
+			"allow": "",
+			"settings": ""
+		},
+		"skip": "",
+		"cancel": "Anuluj",
+		"settings-text": ""
+	},
+	"notification": {
+		"need-restart": {
+			"title": "",
+			"desc": ""
+		},
+		"submit-failed": {
+			"title": "",
+			"desc": ""
+		}
+	},
+	"error": {
+		"labels": {
+			"bug": "Wykryto błąd",
+			"crash": "Wykryto awarię"
+		},
+		"restart-app": "Zrestartuj aplikację",
+		"wtf-screen": {
+			"title": "Jaki jest błąd?",
+			"desc": "Aplikacja właśnie uległa awarii.",
+			"desc-report": ""
+		},
+		"sorry-screen": {
+			"title": "Przepraszamy za ten błąd!",
+			"desc": "Jest to wina Francisa, twórcy wewnętrznego Swishh, który musiał popełnić błąd. Co za szaleństwo tego Francisa!",
+			"desc-em": "*No dobra, w zespole Swishh nie ma Francisa.",
+			"desc-report": ""
+		}
+	},
+	"debug": {
+		"inspector": {
+			"show-button": "Pokaż inspektora aplikacji",
+			"hide-button": "Zamknij",
+			"title": "Inspektor",
+			"accounts": {
+				"title": "Konta",
+				"data-not-found": "Konto nie jest na liście",
+				"action-delete": {
+					"file-exists": "Konto {{accountId}} nie istnieje, jednak plik ma taką nazwę.",
+					"account-exists": "Konto {{accountId}} aktualnie istnieje.",
+					"fs-read-error": "Błąd podczas uzyskiwania informacji FS o koncie",
+					"actions-title": "Co powinniśmy zrobić?",
+					"action-account-manager": "Usuń go poprzez menedżera kont",
+					"action-account-manager-confirm": "Potwierdź usunięcie konta",
+					"action-force-delete": "Wymuś usunięcie",
+					"action-force-delete-confirm": "Potwierdź wymuszenie usunięcia konta",
+					"error-close": "Błąd podczas zamykania konta",
+					"error-delete": "Błąd podczas usuwania konta",
+					"success-feedback": "Konto usunięte",
+					"action-cancel": "Anuluj"
+				},
+				"status": {
+					"datastore-found": "",
+					"datastore-not-found": "",
+					"ipfs-repo-found": "",
+					"ipfs-repo-not-found": "",
+					"messenger-db-found": "Znaleziono DB komunikatora",
+					"messenger-db-not-found": "Nie znaleziono DB komunikatora"
+				},
+				"infos": {
+					"aligned": {
+						"name": "Nazwa: {{name}}",
+						"created": "Utworzono: {{created}}",
+						"opened": "Otwarto:  {{opened}}",
+						"error": "Błąd: {{error}}"
+					}
+				}
+			},
+			"errors": {
+				"title": "Błędy",
+				"header-reported": "Zgłoszono błąd:",
+				"header-all-clear": "Nie zgłoszono błędu",
+				"listing-files-failed": "Wystąpił błąd podczas wyświetlania zawartości katalogu",
+				"listing-accounts-failed": "Błąd podczas wyświetlania kont",
+				"listing-accounts-failed-grpc": "Błąd GRPC podczas wyświetlania kont"
+			},
+			"dump": {
+				"button": "Zrzuć stan aplikacji"
+			},
+			"refresh": "Odśwież",
+			"confirm-alert": {
+				"button-confirm": "Potwierdź",
+				"button-cancel": "Anuluj"
+			}
+		}
+	},
+	"time-for": {
+		"minutes": "",
+		"hours": "",
+		"days": ""
+	}
+}

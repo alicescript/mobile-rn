@@ -1,0 +1,647 @@
+{
+	"onboarding": {
+		"getstarted": {
+			"screenTitle": "",
+			"title": "",
+			"desc": "",
+			"create-button": "",
+			"import-button": ""
+		},
+		"default-mode": {
+			"summary": {
+				"title": "",
+				"screenTitle": "",
+				"subtitle": "",
+				"first-point": "",
+				"second-point": "",
+				"third-point": "",
+				"back-button": "",
+				"accept-button": ""
+			}
+		},
+		"custom-mode": {
+			"summary": {
+				"screenTitle": "",
+				"title": "",
+				"subtitle": "",
+				"first-point": "",
+				"second-point": "",
+				"back-button": "",
+				"accept-button": ""
+			},
+			"settings": {
+				"off-grid": {
+					"title": "",
+					"ble-button": "",
+					"nearby-button": "",
+					"mc-button": "",
+					"mdns-button": ""
+				},
+				"routing": {
+					"title": "",
+					"dht-button": "",
+					"rdvp-button": ""
+				},
+				"access": {
+					"title": "",
+					"relay-button": "",
+					"bootstrap-button": ""
+				},
+				"modals": {
+					"add": {
+						"title": {
+							"relay": "",
+							"bootstrap": "",
+							"rdvp": ""
+						}
+					},
+					"edit": {
+						"title": {
+							"relay": "",
+							"bootstrap": "",
+							"rdvp": ""
+						}
+					},
+					"errors": {
+						"alias-already-exists": "",
+						"multiaddr-alread-exists": "",
+						"multiaddr-bad-format": "",
+						"multiaddr-p2p": ""
+					},
+					"buttons": {
+						"add": "Přidat",
+						"edit": "",
+						"delete": ""
+					},
+					"multiaddress": "",
+					"alias": ""
+				},
+				"all-button": "",
+				"accept-button": ""
+			}
+		},
+		"create-account": {
+			"title": "Vytvořit účet",
+			"first-button": "",
+			"second-button": "",
+			"placeholder": "",
+			"good-to-know": {
+				"title": "",
+				"first-point": "",
+				"second-point": ""
+			}
+		},
+		"generate-key": {
+			"title": "Spouštění Swishh uzlu…",
+			"desc": "Může to chvíli trvat"
+		},
+		"setup-finished": {
+			"title": "Nastavení dokončeno!",
+			"desc": "Teď už můžete aplikaci používat. Můžete začít přidávat kontakty a svobodně a soukromě s nimi komunikovat",
+			"button": ""
+		},
+		"web-views": {
+			"title": "",
+			"desc": "",
+			"first-button": "Zrušit",
+			"second-button": ""
+		}
+	},
+	"main": {
+		"home": {
+			"title": "",
+			"requests": {
+				"title": "",
+				"accept": "Přijmout",
+				"card-title": "Žádost o kontakt!"
+			},
+			"input-placeholder": "Vyhledat klíčové slovo",
+			"no-contacts": "Zatím nemáte žádné kontakty ani chaty",
+			"search": {
+				"no-results": "Nenalezeny žádné výsledky"
+			},
+			"multi-account": {
+				"create-button": "",
+				"import-button": ""
+			},
+			"create-group": {
+				"title": "",
+				"add-members": "",
+				"group-info": "",
+				"search-placeholder": "Vyhledat",
+				"continue": "",
+				"create-group": ""
+			},
+			"create-group-finalize": {
+				"placeholder": "",
+				"about": "",
+				"first-bullet-point": "",
+				"second-bullet-point": "",
+				"third-bullet-point": "",
+				"fourth-bullet-point": "",
+				"fifth-bullet-point": ""
+			},
+			"conversations": {
+				"request-sent": "",
+				"draft": ""
+			}
+		},
+		"suggestion-display-name-initial": ""
+	},
+	"settings": {
+		"home": {
+			"title": "Nastavení",
+			"proximity-button": "",
+			"notifications-button": "Oznámení",
+			"contact-convs-button": "",
+			"appearance-button": "",
+			"accounts-button": "",
+			"network-button": "",
+			"bug-button": "",
+			"about-button": "O projektu Swishh",
+			"version-button": "",
+			"devtools-button": "Nástroje pro vývojáře"
+		},
+		"about": {
+			"title": "O projektu Swishh",
+			"faq-button": "",
+			"roadmap-button": "",
+			"policy-button": "",
+			"license-button": "",
+			"terms-of-use": "Podmínky používání"
+		},
+		"accounts": {
+			"title": "",
+			"backup-button": "",
+			"backup-notif-title": "",
+			"backup-notif-desc": "",
+			"accounts-button": "",
+			"create-button": "",
+			"import-button": "",
+			"link-button": "",
+			"delete-button": "",
+			"delete-title": ""
+		},
+		"appearance": {
+			"title": "",
+			"dark-button": "",
+			"editor-button": "",
+			"theme-editor": {
+				"title": ""
+			}
+		},
+		"contact-convs": {
+			"title": "",
+			"reset-button": "",
+			"request-button": ""
+		},
+		"network": {
+			"title": "",
+			"ble-button": "",
+			"mc-button": "",
+			"nearby-button": "",
+			"mdns-button": "Multicast DNS",
+			"memo-cell-button": "",
+			"medias-cell-button": "",
+			"dht-button": "",
+			"rdvp-button": "",
+			"relay-button": "",
+			"bootstrap-button": ""
+		},
+		"notifications": {
+			"title": "Oznámení"
+		},
+		"edit-profile": {
+			"title": "Upravit profil",
+			"qr-will-update": "Vaše Swishh ID (QR kód) bude aktualizováno",
+			"ocr-wont-update": "Vaše nevyřízené žádosti o kontakty nebudou aktualizovány",
+			"save": "Uložit změny",
+			"cancel": "Zrušit",
+			"name-input-placeholder": "Jméno..."
+		},
+		"swishh-services": {
+			"title": "",
+			"desc": "",
+			"button": "",
+			"skip": ""
+		},
+		"delete-account": {
+			"title": "Smazat účet!",
+			"first-desc": "Opravdu chcete smazat svůj účet?",
+			"desc": "",
+			"cancel-button": "Zrušit",
+			"delete-button": ""
+		},
+		"faq": {
+			"title": ""
+		},
+		"roadmap": {
+			"title": ""
+		},
+		"privacy-policy": {
+			"title": ""
+		},
+		"devtools": {
+			"title": "Nástroje pro vývojáře",
+			"header-left-button": "Informace o zařízení",
+			"header-middle-button": "Vytvořit falešná data",
+			"header-right-button": "Restartovat démona",
+			"simulate-button": "Simulovat chybu streamu",
+			"simulate-js-error-button": "",
+			"system-info-button": "Systémové informace",
+			"debug-button": "Debugging",
+			"log-button": {
+				"name": "",
+				"bullet-point": ""
+			},
+			"log-filters-button": {
+				"name": "",
+				"bullet-point": ""
+			},
+			"add-dev-conversations-button": "Přidat vývojářské konverzace",
+			"share-button": {
+				"title": "Sdílet ID na Discordu",
+				"alert-title": "",
+				"alert-message": "Toto umožní ostatním zaměstnancům naskenovat váš QR kód nebo zkopírovat kontaktní odkaz.",
+				"alert-accept-button": "Jo 👍",
+				"alert-cancel-button": "Ne"
+			},
+			"native-bridge-button": "Testovat Native Bridge",
+			"dump-account-button": "Výpis účtu",
+			"dump-contacts-button": "Výpis kontaktů",
+			"dump-conversations-button": "Výpis konverzací",
+			"dump-interactions-button": "Výpis interakcí",
+			"dump-members-button": "Výpis členů",
+			"stop-node-button": "Zastavit uzel",
+			"local-grpc-button": "lokální gRPC",
+			"console-logs-button": "Záznamy konzole",
+			"ipfs-webui-button": "IPFS WebUI",
+			"send-to-all-button": {
+				"title": "Odeslat zprávy všem kontaktům",
+				"sending": "Odesílání...",
+				"test": "Test, ",
+				"tried": "✔ Proběhl pokus o odeslání {{length}} kontaktů"
+			},
+			"tyber-attach": "",
+			"tyber-host-button": {
+				"name": "",
+				"bullet-point": ""
+			},
+			"footer-left-button": "Informace o zařízení",
+			"footer-middle-button": "Zobrazit události",
+			"footer-right-button": "Restartovat démona"
+		},
+		"system-info": {
+			"title": "Systémové informace"
+		},
+		"fake-data": {
+			"title": "Vytvořit falešná data",
+			"contacts-button": "Vytvořit falešné kontakty",
+			"multi-members-button": "",
+			"messages-button": "Vytvořit falešné zprávy",
+			"delete-button": "Odstranit falešná data"
+		},
+		"add-dev-conversations": {
+			"title": "Přidání vývojářských konverzací",
+			"add": "Přidat {{name}}",
+			"tag-bot": "Bot",
+			"tag-contact": "Kontakt",
+			"tag-conversation": ""
+		},
+		"ipfs-webui": {
+			"title": "IPFS WebUI"
+		},
+		"theme-editor": {
+			"randomize": "",
+			"save": "",
+			"export": "",
+			"share": "",
+			"import": "",
+			"delete": "",
+			"bad-format-title": "",
+			"bad-format-desc": "",
+			"notification-file-saved": {
+				"title": "",
+				"desc": ""
+			}
+		},
+		"my-swishh-ID": {
+			"title": ""
+		},
+		"share": {
+			"invite": "",
+			"tap-to-scan": "",
+			"create-group": ""
+		}
+	},
+	"tabs": {
+		"qr": "QR",
+		"fingerprint": "Otisk",
+		"info": "Info",
+		"devices": "Zařízení"
+	},
+	"modals": {
+		"manage-deep-link": {
+			"invalid-link": "Neplatný odkaz!",
+			"invalid-qr": "Neplatný QR kód!",
+			"error": "Chyba!",
+			"contact-already-added": "",
+			"contact-already-added-message": ""
+		},
+		"invalid-scan": {
+			"dismiss-button": ""
+		},
+		"group-invitation": {
+			"join": "",
+			"password-label": "",
+			"password-placeholder": ""
+		},
+		"save-theme": {
+			"title": "",
+			"desc": "",
+			"placeholder": "",
+			"cancel": "Zrušit",
+			"add": ""
+		}
+	},
+	"chat": {
+		"title-unknown": "",
+		"sending": "Odesílání...",
+		"sent": "",
+		"contact-settings": {
+			"my-devices": ""
+		},
+		"multi-member": {
+			"input-placeholder": ""
+		},
+		"push-notifications": {
+			"title": "Oznámení",
+			"unsupported": "",
+			"check-device-settings": "",
+			"check-account-settings": "",
+			"warning-disable": {
+				"title": "",
+				"subtitle": "",
+				"accept": "",
+				"refuse": ""
+			},
+			"why-cant-disable": "",
+			"why-cant-disable-account": "",
+			"errors": {
+				"no-token": "",
+				"no-server": ""
+			},
+			"warning-enable-all": {
+				"title": "",
+				"subtitle": "",
+				"refuse": "",
+				"accept": "Přijmout"
+			},
+			"warning-disable-mute": {
+				"title": "",
+				"refuse": "",
+				"accept": ""
+			},
+			"receive-push": "Přijímat push oznámení",
+			"hide-previews": "",
+			"auto-enable": "",
+			"show-in-app": ""
+		},
+		"devices": {
+			"title": "Zařízení",
+			"push": {
+				"enabled": "",
+				"not-enabled": "Push oznámení zakázána"
+			}
+		},
+		"multi-member-settings": {
+			"title": "",
+			"media-button": "Média, odkazy a dokumentace",
+			"members-button": {
+				"title": "Členové"
+			},
+			"add-member-button": "Přidat člena",
+			"invite-button": "Pozvat pomocí odkazu",
+			"save-button": "Uložit konverzaci na server"
+		},
+		"add-members": {
+			"members": "Členové",
+			"contacts": "",
+			"add": ""
+		},
+		"multi-member-qr": {
+			"title": "QR skupina"
+		},
+		"one-to-one": {
+			"contact-request-box": {
+				"title": "Žádost o kontakt",
+				"group-invitation": "",
+				"refuse-button": "",
+				"accept-button": "Přijmout",
+				"accepted-button": "",
+				"error": "",
+				"you-invited": "",
+				"this-contact": "",
+				"to-a-group": ""
+			},
+			"infos-chat": {
+				"connection-confirmed": "👋 Swishh spojení potvrzeno! 🎉",
+				"request-sent": "Žádost odeslána :plane:",
+				"incoming": "",
+				"outgoing": "",
+				"refresh-button": ""
+			},
+			"incoming-input-placeholder": "",
+			"input-placeholder": ""
+		},
+		"one-to-one-settings": {
+			"title": "",
+			"media-button": "Média, odkazy a dokumentace",
+			"save-button": "Uložit konverzaci na server"
+		},
+		"replicate-group-settings": {
+			"title": "Ukládání konverzace na server",
+			"no-registered-button": "",
+			"connect-button": "Připojit ke službám provozovaným Swishh",
+			"manage-add-button": "Spravovat nebo přidat služby"
+		},
+		"files": {
+			"gallery": "Galerie",
+			"no-images": "",
+			"camera": "Kamera",
+			"files": "Soubory",
+			"microphone": "Mikrofon",
+			"security-access": "Zabezpečený přístup",
+			"security-access-desc": "Klepnutím sem otevřete nastavení pro povolení přístupu k",
+			"save-to-gallery": "Uložit tento soubor do galerie",
+			"share": "Sdílet",
+			"forward-swishh": "Přeposlat Swishh kontaktu",
+			"forward": "Přeposlat",
+			"image-saved": "Obrázek uložen v galerii"
+		},
+		"shared-medias": {
+			"title": "",
+			"medias": "",
+			"links": "",
+			"documents": "",
+			"file": "",
+			"picture": "",
+			"audio": ""
+		},
+		"reply": {
+			"response-to": "",
+			"replying-to": "",
+			"replied-to": ""
+		},
+		"user-message": {
+			"read-more": "",
+			"show-less": ""
+		},
+		"emojis": {
+			"matching": ""
+		}
+	},
+	"account": {
+		"deleting": "",
+		"creating": "",
+		"opening": {
+			"alert-push-title": "",
+			"alert-push-go-failed": "",
+			"alert-push-fetch-failed": "",
+			"alert-push-perm-denied": "",
+			"alert-push-desc": "",
+			"alert-push-button": ""
+		}
+	},
+	"audio": {
+		"record": {
+			"tooltip": {
+				"usage": "",
+				"not-sent": "",
+				"permission-denied": ""
+			},
+			"slide-to-cancel": "",
+			"cancel-button": "Zrušit"
+		}
+	},
+	"permission": {
+		"notification": {
+			"title": "",
+			"desc": ""
+		},
+		"proximity": {
+			"title": "",
+			"android-desc": "",
+			"ios-desc": ""
+		},
+		"camera": {
+			"title": "Kamera",
+			"desc": ""
+		},
+		"audio": {
+			"title": "",
+			"desc": ""
+		},
+		"gallery": {
+			"title": "",
+			"desc": ""
+		},
+		"button-labels": {
+			"allow": "",
+			"settings": ""
+		},
+		"skip": "",
+		"cancel": "Zrušit",
+		"settings-text": ""
+	},
+	"notification": {
+		"need-restart": {
+			"title": "",
+			"desc": ""
+		},
+		"submit-failed": {
+			"title": "",
+			"desc": ""
+		}
+	},
+	"error": {
+		"labels": {
+			"bug": "",
+			"crash": ""
+		},
+		"restart-app": "",
+		"wtf-screen": {
+			"title": "",
+			"desc": "",
+			"desc-report": ""
+		},
+		"sorry-screen": {
+			"title": "",
+			"desc": "",
+			"desc-em": "",
+			"desc-report": ""
+		}
+	},
+	"debug": {
+		"inspector": {
+			"show-button": "",
+			"hide-button": "",
+			"title": "",
+			"accounts": {
+				"title": "",
+				"data-not-found": "",
+				"action-delete": {
+					"file-exists": "",
+					"account-exists": "",
+					"fs-read-error": "",
+					"actions-title": "",
+					"action-account-manager": "",
+					"action-account-manager-confirm": "",
+					"action-force-delete": "",
+					"action-force-delete-confirm": "",
+					"error-close": "",
+					"error-delete": "",
+					"success-feedback": "",
+					"action-cancel": "Zrušit"
+				},
+				"status": {
+					"datastore-found": "",
+					"datastore-not-found": "",
+					"ipfs-repo-found": "",
+					"ipfs-repo-not-found": "",
+					"messenger-db-found": "",
+					"messenger-db-not-found": ""
+				},
+				"infos": {
+					"aligned": {
+						"name": "",
+						"created": "",
+						"opened": "",
+						"error": ""
+					}
+				}
+			},
+			"errors": {
+				"title": "",
+				"header-reported": "",
+				"header-all-clear": "",
+				"listing-files-failed": "",
+				"listing-accounts-failed": "",
+				"listing-accounts-failed-grpc": ""
+			},
+			"dump": {
+				"button": ""
+			},
+			"refresh": "",
+			"confirm-alert": {
+				"button-confirm": "",
+				"button-cancel": "Zrušit"
+			}
+		}
+	},
+	"time-for": {
+		"minutes": "",
+		"hours": "",
+		"days": ""
+	}
+}

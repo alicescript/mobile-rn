@@ -1,0 +1,19 @@
+{
+	"name": "@swishh/api",
+	"version": "{{ .Version }}",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"repository": "https://github.com/swishh/swishh",
+	"homepage": "https://github.com/swishh/swishh/tree/master/js/packages/api#readme",
+	"files": ["dist"],
+	"scripts": {
+		"prepublish": "tsc && cp ./*.d.ts ./dist"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"protobufjs": "^6.11.2"
+	},
+	"devDependencies": {
+		"typescript": "^4.6.2"
+	}
+}

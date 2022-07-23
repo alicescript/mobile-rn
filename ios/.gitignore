@@ -1,0 +1,10 @@
+Swishh.xcodeproj
+Swishh.xcworkspace
+Pods
+Info.plist
+Frameworks
+main.jsbundle
+tor-deps
+.gomobile-cache
+.xcodegen-cache
+/pods-hashes.json

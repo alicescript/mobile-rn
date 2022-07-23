@@ -1,0 +1,305 @@
+import { useFocusEffect } from '@react-navigation/core'
+import { Layout } from '@ui-kitten/components'
+import { BarCodeScanner } from 'expo-barcode-scanner'
+import { Camera } from 'expo-camera'
+import React, { FC, ReactNode, useCallback, useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import { View, Vibration, StatusBar, ScrollView, TextInput, TouchableOpacity } from 'react-native'
+import { RESULTS } from 'react-native-permissions'
+import QRCode from 'react-native-qrcode-svg'
+
+import logo from '@swishh/assets/images/1_swishh_picto.png'
+import ScanTarget from '@swishh/assets/logo/scan_target.svg'
+import { FloatingMenuItem } from '@swishh/components'
+import { AccountAvatar } from '@swishh/components/avatars'
+import { LoaderDots } from '@swishh/components/LoaderDots'
+import { ButtonSettingRow } from '@swishh/components/shared-components'
+import { UnifiedText } from '@swishh/components/shared-components/UnifiedText'
+import { useAppDimensions } from '@swishh/contexts/app-dimensions.context'
+import { useStyles } from '@swishh/contexts/styles'
+import { useAccount, useMessengerClient, useThemeColor } from '@swishh/hooks'
+import { ScreenFC, useNavigation } from '@swishh/navigation'
+import { checkPermissions } from '@swishh/utils/react-native/checkPermissions'
+import { PermissionType } from '@swishh/utils/react-native/permissions'
+import { shareSwishhID } from '@swishh/utils/react-native/share'
+
+const QrCode: FC<{ size: number }> = ({ size }) => {
+	const client = useMessengerClient()
+	const colors = useThemeColor()
+	const account = useAccount()
+	const [link, setLink] = useState<string>('')
+
+	const getAccountLink = useCallback(async () => {
+		if (account.displayName) {
+			const ret = await client?.instanceShareableSwishhID({
+				reset: false,
+				displayName: account.displayName,
+			})
+			if (ret?.internalUrl) {
+				setLink(ret?.internalUrl)
+			}
+		}
+	}, [account.displayName, client])
+
+	useEffect(() => {
+		getAccountLink()
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [])
+
+	return link ? (
+		<QRCode
+			size={size}
+			value={link}
+			logo={logo}
+			color={colors['background-header']}
+			mode='circle'
+			backgroundColor={colors['main-background']}
+		/>
+	) : (
+		<View style={{ width: size, height: size, justifyContent: 'center' }}>
+			<LoaderDots />
+		</View>
+	)
+}
+
+const ScanBody: FC<{ visible: boolean }> = ({ visible = true }) => {
+	const navigation = useNavigation()
+	const { background, margin, flex, column, border } = useStyles()
+	const { windowHeight, windowWidth, isGteIpadSize, fontScale } = useAppDimensions()
+
+	const qrScanSize = isGteIpadSize
+		? Math.min(windowHeight, windowWidth) * 0.5
+		: Math.min(windowHeight * 0.8, windowWidth * 0.8) - 1.25 * (26 * fontScale)
+
+	return (
+		<View
+			style={[
+				background.black,
+				margin.horizontal.small,
+				column.item.center,
+				flex.align.center,
+				flex.justify.center,
+				border.radius.medium,
+				{
+					overflow: 'hidden',
+					height: qrScanSize,
+					aspectRatio: 1,
+					position: 'relative',
+				},
+			]}
+		>
+			{visible && (
+				<Camera
+					onBarCodeScanned={({ data, type }) => {
+						if (type === BarCodeScanner.Constants.BarCodeType.qr) {
+							// I would like to use binary mode in QR but this scanner seems to not support it, extended tests were done
+							navigation.navigate('Chat.ManageDeepLink', { type: 'qr', value: data })
+							Vibration.vibrate(1000)
+						}
+					}}
+					barCodeScannerSettings={{
+						barCodeTypes: [BarCodeScanner.Constants.BarCodeType.qr],
+					}}
+					style={{
+						height: '100%',
+						width: '100%',
+					}}
+				/>
+			)}
+
+			<ScanTarget height='75%' width='75%' style={{ position: 'absolute' }} />
+		</View>
+	)
+}
+
+const ShareQr: FC = () => {
+	const { margin } = useStyles()
+	const { windowWidth, windowHeight, scaleSize } = useAppDimensions()
+	const account = useAccount()
+	const qrCodeSize = Math.min(windowHeight, windowWidth) * 0.45
+
+	return (
+		<View>
+			<View
+				style={[
+					margin.top.big,
+					margin.bottom.small,
+					{ alignItems: 'center', flexDirection: 'row', justifyContent: 'center' },
+				]}
+			>
+				<View style={[margin.right.small]}>
+					<AccountAvatar size={24 * scaleSize} />
+				</View>
+				<UnifiedText>{account.displayName || ''}</UnifiedText>
+			</View>
+			<QrCode size={qrCodeSize} />
+		</View>
+	)
+}
+
+const ShareContainer: FC<{ element: ReactNode }> = ({ element, children }) => {
+	const colors = useThemeColor()
+	const { padding, border, margin } = useStyles()
+	const { windowWidth, windowHeight, isGteIpadSize, fontScale } = useAppDimensions()
+
+	const containerSize = isGteIpadSize
+		? Math.min(windowHeight, windowWidth) * 0.5
+		: Math.min(windowHeight * 0.8, windowWidth * 0.8) - 1.25 * (26 * fontScale)
+
+	return (
+		<View
+			style={[
+				border.radius.bottom.huge,
+				padding.bottom.huge,
+				padding.top.medium,
+				{
+					backgroundColor: colors['background-header'],
+				},
+			]}
+		>
+			<View
+				style={[
+					border.radius.medium,
+					margin.bottom.big,
+					{
+						alignSelf: 'center',
+						backgroundColor: colors['main-background'],
+						alignItems: 'center',
+						width: containerSize,
+						height: containerSize,
+					},
+				]}
+			>
+				{element}
+			</View>
+			{children}
+		</View>
+	)
+}
+
+export const ShareModal: ScreenFC<'Chat.Share'> = () => {
+	const { flex, margin, height, width } = useStyles()
+	const colors = useThemeColor()
+	const [isScannerVisible, setIsScannerVisible] = useState<boolean>(true)
+	const [isScannerSelected, setIsScannerSelected] = useState<boolean>(false)
+	const { navigate } = useNavigation()
+	const { t } = useTranslation()
+	const account = useAccount()
+	const url = account.link
+
+	// const status = await checkPermissions(PermissionType.camera, {
+	// 	navigate,
+	// 	navigateToPermScreenOnProblem: true,
+	// })
+
+	const initScanner = useCallback(async () => {
+		const status = await checkPermissions(PermissionType.camera)
+		setIsScannerSelected(status !== RESULTS.DENIED && status !== RESULTS.BLOCKED)
+	}, [])
+
+	useEffect(() => {
+		initScanner()
+	}, [initScanner])
+
+	useFocusEffect(
+		useCallback(() => {
+			setIsScannerVisible(true)
+			return () => {
+				setIsScannerVisible(false)
+			}
+		}, []),
+	)
+
+	const toggleScanner = useCallback(async () => {
+		if (!isScannerSelected) {
+			const status = await checkPermissions(PermissionType.camera, {
+				navigate,
+				navigateToPermScreenOnProblem: true,
+				onSuccess: () => setIsScannerSelected(true),
+			})
+			if (status === RESULTS.DENIED || status === RESULTS.BLOCKED) {
+				return
+			}
+		}
+		setIsScannerSelected(!isScannerSelected)
+	}, [isScannerSelected, navigate])
+
+	const handleSwitchQr = useCallback(async () => {
+		if (!isScannerSelected) {
+			await checkPermissions(PermissionType.camera, {
+				navigate,
+				navigateToPermScreenOnProblem: true,
+				onComplete: () => {
+					toggleScanner()
+				},
+				onSuccess: () => {
+					toggleScanner()
+				},
+			})
+		} else {
+			toggleScanner()
+		}
+	}, [isScannerSelected, navigate, toggleScanner])
+
+	return (
+		<Layout style={[flex.tiny, { backgroundColor: colors['main-background'] }]}>
+			<StatusBar backgroundColor={colors['background-header']} barStyle='light-content' />
+			<ScrollView
+				style={[
+					margin.bottom.medium,
+					{
+						backgroundColor: colors['main-background'],
+					},
+				]}
+			>
+				<ShareContainer
+					element={isScannerSelected ? <ScanBody visible={isScannerVisible} /> : <ShareQr />}
+				>
+					<ButtonSettingRow
+						state={[
+							{
+								displayComponent: isScannerSelected && <QrCode size={80} />,
+								name: t('settings.share.tap-to-scan'),
+								icon: 'camera-outline',
+								color: colors['background-header'],
+								style: [margin.right.scale(20), height(120), width(120)],
+								onPress: handleSwitchQr,
+							},
+							{
+								name: t('settings.share.invite'),
+								icon: 'link-outline',
+								color: colors['background-header'],
+								style: [height(120), height(120), width(120)],
+								onPress: async () => {
+									await shareSwishhID(url, t)
+								},
+							},
+						]}
+					/>
+				</ShareContainer>
+				<View style={[margin.horizontal.medium]}>
+					<FloatingMenuItem onPress={() => navigate('Chat.CreateGroupAddMembers')}>
+						{t('settings.share.create-group')}
+					</FloatingMenuItem>
+					{__DEV__ && <DevLinkInput />}
+				</View>
+			</ScrollView>
+		</Layout>
+	)
+}
+
+const DevLinkInput = () => {
+	const [link, setLink] = useState('')
+	const { navigate } = useNavigation()
+	return (
+		<View style={{ flexDirection: 'row' }}>
+			<TextInput style={{ flex: 1 }} onChangeText={setLink} placeholder='Paste link here' />
+			<TouchableOpacity
+				disabled={!link}
+				onPress={() => navigate('Chat.ManageDeepLink', { type: 'link', value: link })}
+			>
+				<UnifiedText>Confirm</UnifiedText>
+			</TouchableOpacity>
+		</View>
+	)
+}
